@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo img {
+    max-width: 190px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration:underline;
+    background-color:#007399;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+
+  .contact-section {
+    background-color:#007399;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 50px;
+    font-size: 2.5em;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #fff;
+    transition: border-color 0.3s;
+    font-size: 1em;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: #0099cc;
+    outline: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #007399;
+  }
+  
+  footer {
+    background-color:#ffffff;
+    color: #000000;
+    text-align: start;
+    padding: 20px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul {
+      display:flex;
+    }
+    
+    nav.open ul {
+      display: block;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: block;
+      margin: 20px 0;
+    }
+  }

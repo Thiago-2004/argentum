@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Productos - Argentum Sports</title>
+  <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Argentum Sports">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="productos" class="product-section">
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="https://imgs.search.brave.com/yw_WC9d9G19yE-fMhVaXG0gLLv_16NhCECzt3BlzC-8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tLm14L2Nk/bi9zaG9wL3Byb2R1/Y3RzLzFfMDgwY2Vh/ZWItODBiOS00MzM4/LWI1YTgtNWRjNTAw/ZDBlNDY2XzI4MHgz/MTVAMnguanBnP3Y9/MTU5NTk4MzgyNA" alt="Producto 1">
+          <div class="product-info">
+            <h3>Producto 1</h3>
+            <p class="description">Descripción detallada del producto.</p>
+            <p class="price">Precio: $XX.XX</p>
+            <button class="btn" onclick="mostrarDetalles(1)">Ver Detalles</button>
+            <div class="detalles" id="detalles-1">
+              <p>Detalles adicionales del Producto 1</p>
+              <button class="btn" onclick="ocultarDetalles(1)">Cerrar Detalles</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://imgs.search.brave.com/v4VeDySTC8x4zTlFJhSQQWDlY7JCt4mmEs5BLHe9d9g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVwb3J0ZXNtZC5j/b20uYXIvc2lzdGVt/YS91cGxvYWRzLzY5/OS9hcnRpY3Vsb3Mv/bWluaS10cmFtcC1z/b25ub3MtcmVmb3J6/YWRvLS0xLS5qcGVn" alt="Producto 2">
+          <div class="product-info">
+            <h3>Producto 2</h3>
+            <p class="description">Descripción detallada del producto.</p>
+            <p class="price">Precio: $XX.XX</p>
+            <button class="btn" onclick="mostrarDetalles(2)">Ver Detalles</button>
+            <div class="detalles" id="detalles-2">
+              <p>Detalles adicionales del Producto 2</p>
+              <button class="btn" onclick="ocultarDetalles(2)">Cerrar Detalles</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+            <img src="https://imgs.search.brave.com/v4VeDySTC8x4zTlFJhSQQWDlY7JCt4mmEs5BLHe9d9g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVwb3J0ZXNtZC5j/b20uYXIvc2lzdGVt/YS91cGxvYWRzLzY5/OS9hcnRpY3Vsb3Mv/bWluaS10cmFtcC1z/b25ub3MtcmVmb3J6/YWRvLS0xLS5qcGVn" alt="Producto 2">
+            <div class="product-info">
+              <h3>Producto 2</h3>
+              <p class="description">Descripción detallada del producto.</p>
+              <p class="price">Precio: $XX.XX</p>
+              <button class="btn" onclick="mostrarDetalles(2)">Ver Detalles</button>
+              <div class="detalles" id="detalles-2">
+                <p>Detalles adicionales del Producto 2</p>
+                <button class="btn" onclick="ocultarDetalles(2)">Cerrar Detalles</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://imgs.search.brave.com/v4VeDySTC8x4zTlFJhSQQWDlY7JCt4mmEs5BLHe9d9g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVwb3J0ZXNtZC5j/b20uYXIvc2lzdGVt/YS91cGxvYWRzLzY5/OS9hcnRpY3Vsb3Mv/bWluaS10cmFtcC1z/b25ub3MtcmVmb3J6/YWRvLS0xLS5qcGVn" alt="Producto 2">
+            <div class="product-info">
+              <h3>Producto 2</h3>
+              <p class="description">Descripción detallada del producto.</p>
+              <p class="price">Precio: $XX.XX</p>
+              <button class="btn" onclick="mostrarDetalles(2)">Ver Detalles</button>
+              <div class="detalles" id="detalles-2">
+                <p>Detalles adicionales del Producto 2</p>
+                <button class="btn" onclick="ocultarDetalles(2)">Cerrar Detalles</button>
+              </div>
+            </div>
+          </div>
+        <!-- Agregar más productos aquí -->
+        <a href="#productos" class="btn">Ver Productos</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Argentum Sports</p>
+    </div>
+  </footer>
+
+  <script>
+    function mostrarDetalles(id) {
+      document.getElementById('detalles-' + id).style.display = 'block';
+    }
+
+    function ocultarDetalles(id) {
+      document.getElementById('detalles-' + id).style.display = 'none';
+    }
+  </script>
+</body>
+</html>
