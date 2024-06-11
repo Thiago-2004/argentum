@@ -52,7 +52,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #ededed;
     color: #333;
   }
   
@@ -90,17 +90,17 @@ body {
   }
   
   nav ul li:last-child {
-    margin-right: 0;
+    margin-right: 0px;
   }
   
   nav ul li a {
     color: #000000;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
   }
   
   nav ul li a:hover {
-    text-decoration:underline;
+    text-decoration:none;
     background-color:#007399;
     padding: 20px;
     border-radius: 10px;
