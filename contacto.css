@@ -168,7 +168,7 @@
   
   nav ul li a:hover {
     text-decoration:none;
-    background-color:#007399;
+    background-color:#0099cc;
     padding: 20px;
     border-radius: 10px;
     color: #ffffff;
@@ -200,7 +200,7 @@
   
   .contact-form {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 500px;
@@ -236,10 +236,16 @@
   }
   
   footer {
-    background-color:#ffffff;
-    color: #000000;
-    text-align: start;
+    background-color: #0099cc;
+    color: #fff;
+    text-align: center;
     padding: 20px 0;
+  }
+  
+  .footer a{
+    margin-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
   }
   
   @media screen and (max-width: 768px) {
