@@ -1,4 +1,4 @@
-
+/* 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -96,6 +96,203 @@ body {
   
   .product {
     width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #000000;
+    transition: box-shadow 0.3s;
+  }
+  
+  .product:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    margin-top: 0;
+  }
+  
+  .product p {
+    margin-bottom: 10px;
+  }
+
+  .boton{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #0099cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f4fcff;
+  }
+
+  .cuota h2{
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    background-color: #000000;
+  }
+
+  .redes h1{
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .redes-img {
+    text-align: center; /* Esto centra horizontalmente los elementos dentro del contenedor */
+  /* }
+  .redes-img img {
+    width: 70px; /* Establece el ancho deseado */
+  /*  margin: 5px auto;  Centra horizontalmente la imagen dentro de su contenedor
+  }
+ */
+  /* .redes-img a{
+    margin-right: 20px;
+  }
+  
+
+  .linea {
+    border: none;
+    height: 2px;
+    background-color: #0099cc;
+    margin: 20px 0;
+}
+
+.email{
+  color: #000000;
+  text-decoration: none;
+}
+
+.row{margin-top: 20px;}
+
+  footer {
+    background-color: #0099cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer a{
+    margin-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+  } */ 
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo img {
+    max-width: 190px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0px;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration:none;
+    background-color:#0099cc;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+
+.container h1{
+  text-align: center;
+}
+
+  .container-1 h1{
+    color: #0099cc;
+  }
+
+  .container-1 p{
+    font-size: 25px;
+  }
+
+  
+  .hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .product-section {
+    padding: 50px 0;
+  }
+  
+  .product-section h2 {
+    text-align: center;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    width: 250px;
     margin: 20px;
     padding: 20px;
     background-color: #fff;
