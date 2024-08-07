@@ -1,0 +1,48 @@
+  .abajo{
+    width: 100%;
+  }
+  .redes h1{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .redes-img {
+    text-align: center; /* Esto centra horizontalmente los elementos dentro del contenedor */
+  }
+  .redes-img img {
+    width: 65px; /* Establece el ancho deseado */
+    margin: 5px auto; /* Centra horizontalmente la imagen dentro de su contenedor */
+  }
+
+  .redes-img a{
+    margin-right: 20px;
+  }
+
+  .email{
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .row{margin-top: 20px;}
+
+
+  footer {
+  
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  
+  .footer a{
+    margin-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .Footer1 p{
+    padding: 20px;
+    margin-top: 20px;
+    background-color:  #3498db;
+  }

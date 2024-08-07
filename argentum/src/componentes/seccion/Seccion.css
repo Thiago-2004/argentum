@@ -1,0 +1,26 @@
+
+    .container-1 h1{
+      padding: 20px;
+      color: #0099cc;  
+      font-family: 'bebas neue',sans-serif;
+      font-size: 30px;
+    }
+  
+    .container-1 p{
+      font-size: 25px;
+      font-family:  'bebas neue',sans-serif;
+    }
+    .hero {
+        background-image: url('hero-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #000000;
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      h2{
+        margin-top: 50px;
+        font-size: 3ric;
+      }
+      
