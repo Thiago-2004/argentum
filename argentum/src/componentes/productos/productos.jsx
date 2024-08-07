@@ -25,7 +25,7 @@ function Productos() {
           {(<div className="product">
             {productos.map((producto) =>
               <div key={producto.nombre} className="product-info">
-                <h3>{producto.name}</h3>
+                <h3>{producto.nombre}</h3>
                 <p>precio: {producto.precio}</p>
                 <img src={producto.imagen} alt="banda" />
                 <button className="btn">Agregar a carrito</button>
@@ -39,9 +39,6 @@ function Productos() {
   )
 }
 export default Productos
-
-
-
 
 
 
