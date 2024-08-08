@@ -1,4 +1,4 @@
-import './productos.css'
+/*import './productos.css'
 import React, { useEffect, useState } from 'react'
 import { fetchProductos } from "./api";
 
@@ -38,7 +38,7 @@ function Productos() {
     </section>
   )
 }
-export default Productos
+export default Productos */
 
 
 
@@ -121,3 +121,74 @@ return (
     </div>
   </section>
 )  */
+
+
+
+
+
+
+  import './productos.css';
+import p1 from "../../assets/imagenes/bandafunc.png";
+import p2 from "../../assets/imagenes/conosranurados.png";
+import p3 from "../../assets/imagenes/discobalanc.png";
+import p4 from "../../assets/imagenes/matpilates.png";
+import React, { useContext, useState } from 'react';
+import { CarritoContext } from '../carrito/CarritoContext.jsx';
+
+function Productos() {
+  const [mostrarDetalles, setMostrarDetalles] = useState(false);
+  const { agregarAlCarrito } = useContext(CarritoContext);
+
+  const handleClicEnBotonDetalles = () => {
+    setMostrarDetalles(!mostrarDetalles);
+  };
+
+  const handleAgregarAlCarrito = (producto) => {
+    agregarAlCarrito(producto);
+  };
+
+  const productos = [
+    { id: 1, nombre: 'Banda func', precio: 20000, imagen: p1, descripcion: 'dfsfddf' , },
+    { id: 2, nombre: 'Conos ranurados', precio: 50000, imagen: p2, descripcion : 'dfsdfsfsd', },
+    { id: 3, nombre: 'Disco balance', precio: 40000, imagen: p3, descripcion: 'ddfsdfsdfdfsdfds' , },
+    { id: 4, nombre: 'Mat pilates', precio: 30000, imagen: p4 , descripcion : 'dfdfsfsdfd',},
+    { id: 5, nombre: 'Mat pilates', precio: 30000, imagen: p4 , descripcion : 'dfsdfsdfds',},
+    { id: 6, nombre: 'Mat pilates', precio: 30000, imagen: p4 , descripcion : 'dfsdfdf',},
+    { id: 7, nombre: 'Mat pilates', precio: 30000, imagen: p4 , descripcion : 'dfsfsdfdsf',},
+    { id: 8, nombre: 'Mat pilates', precio: 30000, imagen: p4 , descripcion : 'dfsdfd',},
+    { id: 9, nombre: 'Mat pilates', precio: 30000, imagen: p4 , descripcion : 'dfsdfsf',},
+    { id: 10, nombre: 'Mat pilates', precio: 30000, imagen: p4 , descripcion : 'dfsdfdfsd',},
+    { id: 11, nombre: 'Mat pilates', precio: 30000, imagen: p4, descripcion: 'fdsfd' , },
+    { id: 12, nombre: 'Mat pilates', precio: 30000, imagen: p4, descripcion: 'dsfsdfsdd', } ,
+  ];
+
+  return (
+    <section id="productos" className="product-section">
+      <div className="container">
+        <h1 className="animate__animated animate__rubberBand tittle"></h1>
+        <div className="product-container">
+          {productos.map(producto => (
+            <div className="product" key={producto.id}>
+              <img src={producto.imagen} alt={producto.nombre} />
+              <div className="product-info">
+                <h3>{producto.nombre}</h3>
+                <p>Precio: {producto.precio}</p>
+                <button className="btn" onClick={handleClicEnBotonDetalles}>
+                  {mostrarDetalles ? 'Ocultar detalles' : 'Ver detalles'}
+                </button>
+                {mostrarDetalles && (
+                  <div className='detallesProductos'>
+                    <h2> Información del producto </h2>
+                  </div>
+                )}
+                <button className="btn" onClick={() => handleAgregarAlCarrito(producto)}>Agregar a carrito 🛒</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Productos;

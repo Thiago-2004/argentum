@@ -1,4 +1,4 @@
-  .abajo{
+  /*.abajo{
     width: 100%;
   }
   .redes h1{
@@ -8,10 +8,10 @@
 
   .redes-img {
     text-align: center; /* Esto centra horizontalmente los elementos dentro del contenedor */
-  }
+/*  }
   .redes-img img {
-    width: 65px; /* Establece el ancho deseado */
-    margin: 5px auto; /* Centra horizontalmente la imagen dentro de su contenedor */
+    width: 65px;  Establece el ancho deseado */
+   ;/* margin: 5px auto /* Centra horizontalmente la imagen dentro de su contenedor 
   }
 
   .redes-img a{
@@ -46,3 +46,69 @@
     margin-top: 20px;
     background-color:  #3498db;
   }
+*/
+
+
+/* Estilo general para el footer */
+/* Estilo general para el footer */
+.footer {
+  background-color: #f8f9fa; /* Cambia el color de fondo si es necesario */
+  padding: 20px 0;
+  position: relative; /* Asegura que el contenedor del footer esté en el flujo del documento */
+}
+
+/* Estilo para el contenedor de redes sociales */
+.redes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.redes-img {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.redes-img img {
+  max-width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: auto;
+}
+
+/* Estilo para el contenedor de información */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Espaciado en los lados */
+}
+
+.info-item {
+  flex: 1;
+  text-align: center;
+}
+
+.linea {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.email {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para el pie de página que ocupa todo el ancho del viewport */
+.footer-bottom {
+  background-color: #333; /* Color de fondo para la parte inferior */
+  color: #fff; /* Color del texto */
+  text-align: center;
+  padding: 10px;
+; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

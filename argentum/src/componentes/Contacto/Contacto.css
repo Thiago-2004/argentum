@@ -4,6 +4,10 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  form{
+    margin-top: 100px;
+  }
   
   h1 {
     text-align: center;

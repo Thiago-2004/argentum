@@ -1,54 +1,9 @@
-.container {
-    font-family: 'bebas neue',sans-serif ;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  header {
-    background-color: #ffffff;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .logo img {
-    max-width: 190px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-    margin-top: 40px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0px;
-  }
-  
-  nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 22px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration:none;
-    background-color:#0099cc;
-    padding: 20px;
-    border-radius: 10px;
-    color: #ffffff;
-  }
-  .container h1{
-    text-align: center;
-    font-family: 'bebas neue',sans-serif;
-  }
+
+.logo{
+  max-width: 7rem;
+}
+
+
+
+
+
