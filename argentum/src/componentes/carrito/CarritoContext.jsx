@@ -1,14 +1,18 @@
  import React, { createContext, useState } from 'react';
 
  export const CarritoContext = createContext();
+ import { v4 as uuidv4 } from 'uuid';
 
 
-export const CarritoProvider = ({ children }) => {
+export const CarritoPro = ({ children }) => {
   const [carrito, setCarrito] = useState([]);
 
   const agregarAlCarrito = (producto) => {
-    setCarrito([...carrito, producto]);
-  }
+    setCarrito((prevCarrito) => [
+      ...prevCarrito,
+      { ...producto, id: uuidv4() } 
+    ]);
+  };
 
   const eliminarDelCarrito = (id) => {
     setCarrito(carrito.filter(producto => producto.id !== id));

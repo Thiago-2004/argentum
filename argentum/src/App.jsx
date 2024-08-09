@@ -6,11 +6,11 @@ import Productos from './componentes/productos/productos.jsx'
 import Footer from './componentes/Footer/Footer.jsx'
 import ContactForm from './componentes/Contacto/Contacto.jsx'
 import Carrito from './componentes/carrito/Carrito.jsx'
-import { CarritoProvider } from './componentes/carrito/CarritoContext.jsx';
+import { CarritoPro } from './componentes/carrito/CarritoContext.jsx';
 
 function app(){
   return(
-    <CarritoProvider>
+    <CarritoPro>
   <Router>
     <div className='contenedor'>
       <Navbar1 />
@@ -25,7 +25,7 @@ function app(){
       <Footer />
     </div>
   </Router>
-</CarritoProvider>
+</CarritoPro>
 
   );
 }

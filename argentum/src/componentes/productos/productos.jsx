@@ -7,14 +7,14 @@ import React, { useContext, useState } from 'react';
 import { CarritoContext } from '../carrito/CarritoContext.jsx';
 
 function Productos() {
-  const [mostrarDetalles, setMostrarDetalles] = useState(false);
+  const [detallesVisible, setDetallesVisible] = useState(null);
   const { agregarAlCarrito } = useContext(CarritoContext);
 
-  const handleClicEnBotonDetalles = () => {
-    setMostrarDetalles(!mostrarDetalles);
+  const handleClicEnBotonDetalles = (id) => {
+    setDetallesVisible(detallesVisible === id ? null : id);
   };
 
-  const handleAgregarAlCarrito = (producto) => {
+  const handleAgregarAlCarrito = (producto) => {  
     agregarAlCarrito(producto);
   };
 
@@ -23,10 +23,10 @@ function Productos() {
     { id: 2, nombre: 'Conos ranurados', precio: 5000, imagen: p2 },
     { id: 3, nombre: 'Disco balance', precio: 10000, imagen: p3 },
     { id: 4, nombre: 'Mat pilates', precio: 10000, imagen: p4 },
-    { id: 4, nombre: 'Mat pilates', precio: 10000, imagen: p4 },
-    { id: 4, nombre: 'Mat pilates', precio: 50000, imagen: p4 },
-    { id: 4, nombre: 'Mat pilates', precio: 10000, imagen: p4 },
-    { id: 4, nombre: 'Mat pilates', precio: 10000, imagen: p4 },
+    { id: 5, nombre: 'Mat pilates', precio: 1200, imagen: p4 },
+    { id: 6, nombre: 'Mat pilates', precio: 50000, imagen: p4 },
+    { id: 7, nombre: 'Mat pilates', precio: 1000, imagen: p4 },
+    { id: 8, nombre: 'Mat pilates', precio: 20000, imagen: p4 },
   ];
 
   return (
@@ -40,10 +40,10 @@ function Productos() {
               <div className="product-info">
                 <h3>{producto.nombre}</h3>
                 <p>Precio: ${producto.precio.toFixed(2)}</p>
-                <button className="btn" onClick={handleClicEnBotonDetalles}>
-                  {mostrarDetalles ? 'Ocultar detalles' : 'Ver detalles'}
+                <button className="btn" onClick={() => handleClicEnBotonDetalles(producto.id)}>
+                  {detallesVisible === producto.id ? 'Ocultar detalles' : 'Ver detalles'}
                 </button>
-                {mostrarDetalles && (
+                {detallesVisible === producto.id && (
                   <div className='detallesProductos'>
                     <h2> Información del producto </h2>
                   </div>
