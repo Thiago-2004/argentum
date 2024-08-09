@@ -1,13 +1,14 @@
-import React, { createContext, useState } from 'react';
+ import React, { createContext, useState } from 'react';
 
-export const CarritoContext = createContext();
+ export const CarritoContext = createContext();
 
-export const CarritoPro = ({ children }) => {
+
+export const CarritoProvider = ({ children }) => {
   const [carrito, setCarrito] = useState([]);
 
   const agregarAlCarrito = (producto) => {
     setCarrito([...carrito, producto]);
-  };
+  }
 
   const eliminarDelCarrito = (id) => {
     setCarrito(carrito.filter(producto => producto.id !== id));
