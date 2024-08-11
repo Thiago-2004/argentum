@@ -19,14 +19,13 @@ function Productos() {
   };
 
   const productos = [
-    { id: 1, nombre: 'Banda func', precio: 80000, imagen: p1 },
-    { id: 2, nombre: 'Conos ranurados', precio: 5000, imagen: p2 },
-    { id: 3, nombre: 'Disco balance', precio: 10000, imagen: p3 },
-    { id: 4, nombre: 'Mat pilates', precio: 10000, imagen: p4 },
-    { id: 5, nombre: 'Mat pilates', precio: 1200, imagen: p4 },
-    { id: 6, nombre: 'Mat pilates', precio: 50000, imagen: p4 },
-    { id: 7, nombre: 'Mat pilates', precio: 1000, imagen: p4 },
-    { id: 8, nombre: 'Mat pilates', precio: 20000, imagen: p4 },
+    { id: 1, nombre: 'Banda func', precio: 80000, imagen: p1 , descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs"},
+    { id: 2, nombre: 'Conos ranurados', precio: 5000, imagen: p2, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
+    { id: 3, nombre: 'Disco balance', precio: 10000, imagen: p3 , descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs"},
+    { id: 4, nombre: 'Mat pilates', precio: 10000, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs"},
+    { id: 5, nombre: 'Mat pilates', precio: 1200, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
+    { id: 6, nombre: 'Mat pilates', precio: 50000, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
+    { id: 7, nombre: 'Mat pilates', precio: 1000, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
   ];
 
   return (

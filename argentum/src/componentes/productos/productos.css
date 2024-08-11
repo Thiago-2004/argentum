@@ -72,7 +72,12 @@
 }
 
 h2{
+  font-size: 12px;
   margin: auto;
+}
+
+h1{
+  font-size: 30px;
 }
 
 .product-info h3{
