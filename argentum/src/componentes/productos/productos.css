@@ -62,7 +62,7 @@
 
   .tittle{
     padding-top: 5rem;
-    font-size: 19px;
+    font-size: 30px;
   }
 
 .detallesProductos{ 
@@ -71,10 +71,6 @@
   color: #000000;
 }
 
-h2{
-  font-size: 12px;
-  margin: auto;
-}
 
 h1{
   font-size: 30px;
@@ -83,7 +79,10 @@ h1{
 .product-info h3{
  font-size: 20px;
 }
-
+.descripcion{
+  font-size: 12px;
+  margin-top: 2rem;
+}
 @media screen and (min-width: 448px) {
   .product-container{
     grid-template-columns: repeat(2,1fr);

@@ -16,7 +16,7 @@ function app(){
       <Navbar1 />
       <main>
         <Routes>
-          <Route path='/' element={<Seccion />} />
+          <Route path='/argentum' element={<Seccion />} />
           <Route path='/productos' element={<Productos />} />
           <Route path='/contacto' element={<ContactForm />} />
           <Route path='/carrito' element={<Carrito />} />

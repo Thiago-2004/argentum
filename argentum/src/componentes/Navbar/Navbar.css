@@ -1,9 +1,21 @@
 
 .logo{
-  max-width: 7rem;
+   max-width: 10rem; 
+}
+.bg-celeste{
+  --bs-bg-opacity: 1;
+  background-color: #5ac7eb;
+}
+
+.me-auto nav.link{
+  text-align: center;
+}
+
+.navbar .nav-link {
+  font-size: 25px;
 }
 
 
-
-
-
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}

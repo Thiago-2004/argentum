@@ -27,8 +27,8 @@ function ContactForm() {
     alert("Email enviado")
   };
 
-  return (
-    <form onSubmit={handleSubmit}>
+  return ( 
+    <form onSubmit={handleSubmit} id="contact-form">
       <div>
         <label htmlFor="name">Nombre:</label>
         <input
@@ -38,7 +38,7 @@ function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-        />
+          />
       </div>
       <div>
         <label htmlFor="email">Email:</label>
@@ -49,7 +49,7 @@ function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-        />
+          />
       </div>
       <div>
         <label htmlFor="message">Mensaje:</label>
@@ -59,7 +59,7 @@ function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
-        />
+          />
       </div>
       <button type="submit">Enviar</button>
     </form>

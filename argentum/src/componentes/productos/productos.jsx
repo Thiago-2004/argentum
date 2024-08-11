@@ -26,6 +26,7 @@ function Productos() {
     { id: 5, nombre: 'Mat pilates', precio: 1200, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
     { id: 6, nombre: 'Mat pilates', precio: 50000, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
     { id: 7, nombre: 'Mat pilates', precio: 1000, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
+    { id: 8, nombre: 'Mat pilates', precio: 1000, imagen: p4, descripcion: "lorerdhdfsgfduysgsduyfgsduyfgs" },
   ];
 
   return (
@@ -44,7 +45,7 @@ function Productos() {
                 </button>
                 {detallesVisible === producto.id && (
                   <div className='detallesProductos'>
-                    <h2> Información del producto </h2>
+                    <h2 className='descripcion'> {producto.descripcion} </h2>
                   </div>
                 )}
                 <button className="btn" onClick={() => handleAgregarAlCarrito(producto)}>Agregar a carrito🛒</button>
