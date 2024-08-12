@@ -5,7 +5,7 @@
 
 
  .carrito-container {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,9 +13,9 @@
     min-height: 50vh; 
     padding: 20px;
     text-align: center;
-    background-color: #07b9f4; /* Color de fondo opcional */
-    border-radius: 8px; /* Bordes redondeados opcionales */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    background-color: #07b9f4; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .carrito-container ul {
@@ -38,7 +38,7 @@
   
   .btn.limpiar {
     margin-top: 20px;
-    background-color: #07b9f4;
+    background-color: #7e2af5;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -48,7 +48,7 @@
   }
   
   .btn.limpiar:hover {
-    background-color: #00b3f4;
+    background-color: #581aeb;
   }
 
   .carrito-container p{
@@ -57,15 +57,4 @@
   
 
 
- /* .carrito-container{
-    background-color: blanchedalmond;
-    width: 18rem;
-    margin: 2rem;
-    padding: 2rem;
-    background-color: #fff;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px #000000;
-    transition: box-shadow 0.3s;
-  }
-  */
+ 

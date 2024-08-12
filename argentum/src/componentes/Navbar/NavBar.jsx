@@ -33,27 +33,3 @@
 
 
 
-/* import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { CarritoContext } from '../carrito/CarritoContext';
-import './Navbar.css';
-
-function Navbar() {
-  const { cantidadTotalProductos } = useContext(CarritoContext);
-
-  return (
-    <nav className="navbar">
-      <Link to="/" className="nav-link">Inicio</Link>
-      <Link to="/productos" className="nav-link">Productos</Link>
-      <Link to="/contacto" className="nav-link">Contacto</Link>
-      <Link to="/carrito" className="nav-link">
-        Carrito ({cantidadTotalProductos})
-      </Link>
-    </nav>
-  );
-}
-
-export default Navbar; */
-
-
-

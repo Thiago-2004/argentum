@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route,Navigate } from 'react-router-dom'
 import './App.css'
 import Navbar1 from './componentes/Navbar/NavBar.jsx'
 import Seccion from './componentes/seccion/Seccion.jsx'
@@ -16,7 +16,8 @@ function app(){
       <Navbar1 />
       <main>
         <Routes>
-          <Route path='/argentum' element={<Seccion />} />
+          <Route path="/" element={<Navigate to="/argentum" />} />
+          <Route path='/argentum' element={<Seccion />} />  
           <Route path='/productos' element={<Productos />} />
           <Route path='/contacto' element={<ContactForm />} />
           <Route path='/carrito' element={<Carrito />} />

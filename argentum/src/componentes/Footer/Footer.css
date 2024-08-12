@@ -1,63 +1,11 @@
-  /*.abajo{
-    width: 100%;
-  }
-  .redes h1{
-    text-align: center;
-    margin-top: 20px;
-  }
 
-  .redes-img {
-    text-align: center; /* Esto centra horizontalmente los elementos dentro del contenedor */
-/*  }
-  .redes-img img {
-    width: 65px;  Establece el ancho deseado */
-   ;/* margin: 5px auto /* Centra horizontalmente la imagen dentro de su contenedor 
-  }
-
-  .redes-img a{
-    margin-right: 20px;
-  }
-
-  .email{
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .row{margin-top: 20px;}
-
-
-  footer {
-  
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 15px;
-  }
-  
-  .footer a{
-    margin-right: 10px;
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  .Footer1 p{
-    padding: 20px;
-    margin-top: 20px;
-    background-color:  #3498db;
-  }
-*/
-
-
-/* Estilo general para el footer */
-/* Estilo general para el footer */
 .footer {
-  background-color: #f8f9fa; /* Cambia el color de fondo si es necesario */
+  background-color: #ffffff; 
   padding: 20px 0;
-  position: relative; /* Asegura que el contenedor del footer esté en el flujo del documento */
+  position: relative; 
 }
 
-/* Estilo para el contenedor de redes sociales */
+
 .redes {
   text-align: center;
   margin-bottom: 20px;
@@ -66,34 +14,42 @@
 .redes-img {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Espacio entre las imágenes */
+  gap: 50px; 
 }
+
 
 .redes-img img {
-  max-width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  max-width: 50px; 
   height: auto;
+  border-radius: 10px;
+   
 }
 
-/* Estilo para el contenedor de información */
+
 .info-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px; /* Espaciado en los lados */
+  padding: 0 20px; 
 }
 
 .info-item {
   flex: 1;
   text-align: center;
+  font-size: 20px;
+}
+
+h4{
+  font-size: 20px;
 }
 
 .linea {
   border: 0;
-  border-top: 1px solid #ddd;
+  border-top: 2px solid #15b1ff;
   margin: 10px 0;
 }
 
 .email {
-  color: #007bff;
+  color: #53a0f2;
   text-decoration: none;
 }
 
@@ -101,12 +57,12 @@
   text-decoration: underline;
 }
 
-/* Estilo para el pie de página que ocupa todo el ancho del viewport */
+
 .footer-bottom {
-  background-color: #333; /* Color de fondo para la parte inferior */
-  color: #fff; /* Color del texto */
+  background-color: #333; 
+  color: #fff; 
   text-align: center;
-  padding: 10px;
+  padding: 30px;
 ; 
   left: 0;
   right: 0;

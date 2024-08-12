@@ -1,17 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
-/* body {
-    font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */
+
 
 #contact-form {
   width: 400px;
@@ -104,39 +94,3 @@ button:active {
     transform: translateY(1px);
 }
 
-
-/*#contact-form {
-  width: 400px;
-  margin: 40px auto;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-
-#contact-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-#contact-form input, #contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-}
-
-#contact-form input[type="submit"] {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#contact-form input[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-*/
